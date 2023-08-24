@@ -53,6 +53,7 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+meyez_t meyez = {NULL, NULL, NULL, 0};
 void f_gefi(stack_t **, unsigned int );
 void f_teqr(stack_t **, unsigned int );
 int seri(char *west, stack_t **, unsigned int , FILE *);
