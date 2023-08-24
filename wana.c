@@ -1,4 +1,5 @@
 #include "monty.h"
+meyez_t meyez = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
 * @argc: number of arguments
