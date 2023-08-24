@@ -24,8 +24,7 @@ void f_gefi(stack_t **head, unsigned int kotari)
 			leke(*head);
 			exit(EXIT_FAILURE); }}
 	else
-	{
-		fprintf(stderr, "L%d: usage: push integer\n", kotari);
+	{fprintf(stderr, "L%d: usage: push integer\n", kotari);
 		fclose(meyez.file);
 		free(meyez.west);
 		leke(*head);
