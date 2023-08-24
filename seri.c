@@ -1,16 +1,16 @@
 #include "monty.h"
 /**
-* execute - executes the opcode
+* seri - executes the opcode
 * @stack: head linked list - stack
 * @counter: line_counter
 * @file: poiner to monty file
 * @content: line content
 * Return: no return
 */
-int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
+int seri(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	instruction_t opst[] = {
-				{"push", f_gefi}, {"pall", f_teqr},,
+				{"push", f_gefi}, {"pall", f_teqr},
 				{"queue", f_queue},
 				{NULL, NULL}
 				};

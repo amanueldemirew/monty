@@ -18,7 +18,7 @@ void f_queue(stack_t **head, unsigned int kotari)
  * @head: head of the stack
  * Return: no return
 */
-void queuchmr(stack_t **head, int n)
+void queuechmr(stack_t **head, int n)
 {
 	stack_t *new_node, *aux;
 

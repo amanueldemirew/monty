@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define  _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -51,27 +52,11 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-ssize_t getstdin(char **lineptr, int file);
-char  *clean_line(char *content);
-void f_gefi(stack_t **head, unsigned int number);
-void f_teqr(stack_t **head, unsigned int number);
-void f_kelmt(stack_t **head, unsigned int number);
-int seri(char *west, stack_t **head, unsigned int kotari, FILE *file);
+void f_gefi(stack_t **, unsigned int );
+void f_teqr(stack_t **, unsigned int );
+int seri(char *west, stack_t **, unsigned int , FILE *);
 void leke(stack_t *head);
-void f_pop(stack_t **head, unsigned int counter);
-void f_swap(stack_t **head, unsigned int counter);
-void f_add(stack_t **head, unsigned int counter);
-void f_nop(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
-void f_div(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
-void f_mod(stack_t **head, unsigned int counter);
-void f_pchar(stack_t **head, unsigned int counter);
-void f_pstr(stack_t **head, unsigned int counter);
-void f_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void nodechmr(stack_t **head, int n);
-void queuechmr(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+void nodechmr(stack_t **, int );
+void queuechmr(stack_t **, int );
+void f_queue(stack_t **, unsigned int );
 #endif
