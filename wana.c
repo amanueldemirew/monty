@@ -40,6 +40,6 @@ int main(int argc, char *argv[])
 		free(west);
 	}
 	leke(stack);
-	fclose(file);
+	fclose(file);;
 return (0);
 }
