@@ -39,6 +39,7 @@ typedef struct meyez_s
 	int bezat;
 }  meyez_t;
 extern meyez_t meyez;
+meyez_t meyez = {NULL, NULL, NULL, 0};
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode

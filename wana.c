@@ -1,5 +1,4 @@
 #include "monty.h"
-meyez_t meyez = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
 * @argc: number of arguments
@@ -26,12 +25,12 @@ int main(int argc, char *argv[])
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
-	}	
+	}
 	while (menbebe > 0)
 	{
 		west = NULL;
 		menbebe = getline(&west, &size, file);
-		meyez.west = west;	
+		meyez.west = west;
 		kotare++;
 		if (menbebe  > 0)
 		{
@@ -40,6 +39,6 @@ int main(int argc, char *argv[])
 		free(west);
 	}
 	leke(stack);
-	fclose(file);;
+	fclose(file);
 return (0);
 }
